@@ -1,0 +1,1589 @@
+
+  .body2 {
+  
+width: 100%;
+
+
+
+
+justify-content: space-between;
+
+
+  }
+
+
+  
+  .header {
+    background-image: url('./images/abti.jpg'); /* Adjust the path as needed */
+ 
+     background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100vh;
+  }
+  
+  
+  
+  .header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #00101deb;    backdrop-filter: blur(20px); /* Blur effect */
+    z-index: 0;
+  }
+  
+  .header-content {
+
+    z-index: 0;
+
+  }
+
+
+  
+  
+  .p112 {
+width: 40%;
+margin-top: 2%;
+margin-left: 30%;
+font-size: 110%;
+display: flex;
+    color: #fffdfd;
+  }
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+  .word-icon {
+    width: 5%; /* Adjust the size as needed */
+    height: auto; /* Adjust the size as needed */
+    display: flex;
+}
+/* Add this inside your Homepage.css file */
+@keyframes slidePauseExit {
+  0%, 10% {
+    transform: translateX(80%);
+    opacity: 0;
+  }
+  20%, 45% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  55%, 100% {
+    transform: translateX(-80%);
+    opacity: 0;
+  }
+}
+
+.animated-words {
+  display: flex;
+  overflow: hidden;
+  height: 100%; 
+  width: 100%;
+  margin-left: -22%;
+  margin-top: 5%;
+
+cursor: pointer;
+
+}
+
+/* Add this inside your Homepage.css file */
+.animated-words:hover .word {
+  animation-play-state: paused;
+}
+
+
+.word {
+  position: absolute;
+
+  white-space: nowrap;
+  animation: slidePauseExit 12s linear infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+
+}
+
+
+
+.word h2 {
+  color: white; /* Set the color of h2 elements to white */
+  width: 50%; /* Restrict width to 50% of their parent container */
+  margin: 0 auto; /* Center the heading within its container */
+}
+
+
+
+
+/* Add this to your existing CSS */
+.word:hover {
+  animation-play-state: paused;
+}
+
+
+
+.word:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.word:nth-child(2) {
+  animation-delay: 4s; /* Start the second as the first is halfway through */
+}
+
+.word:nth-child(3) {
+  animation-delay: 8s; /* Start the third as the second is halfway through */
+}
+
+.read-more-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #03053455;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.peter-info {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 110%;
+}
+
+.about-us-section {
+  padding: 50px 0;
+  background-color: #f5f5f5;
+}
+
+
+
+.image55container {
+  position: absolute;
+  
+
+  margin-top: 25%;
+  margin-left: -2%;
+  display: flex;}
+
+
+.image55wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.zoom55image {
+  position: relative;
+  width: 35%; /* Adjust image size */
+  transition: transform 0.3s ease-in-out;
+  height: 100%;
+  opacity: 0.7;
+  border-radius: 10%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgb(7, 158, 192); /* Add box-shadow */
+}
+
+
+.image55overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.667); /* Dark black color overlay */
+border-radius: 10%;
+  transform: translate(-50%, -50%);
+cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1; 
+  font-size: 110%;
+  font-weight: bold;
+}
+
+.image55wrapper:hover .zoom55image  {
+  transform: scale(1.1); /* Adjust zoom level */
+  /* Initially hidden */
+  opacity: 19;
+}
+
+.image55wrapper:hover .image55overlay {
+  opacity: 2;
+
+
+
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.about-us-heading {
+  text-align: center;
+font-size: 30px;
+margin-left: 0;
+transform: translate(0%, -400%);
+background-image: linear-gradient(to right, #04b7f3 50%, blue 50%);
+background-position: bottom;
+background-size: 20% 1.5px;
+background-repeat: no-repeat;
+}
+
+.about-us-paragraph {
+  transform: translate(0%, -150%);
+  line-height: 1.6;
+  width: 50%;
+ font-size: 110%;
+  margin-left: 25%;
+
+}
+
+
+
+
+  
+  .btn {
+    padding: 10px 15px;
+ 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .get-started {
+    background-color: #7645e0; 
+    color: white;
+    transform: translate(-150%, -370%);
+  }
+  
+  .get-started:hover {
+    background-color: #0056b3;
+  }
+  
+  .login {
+    background-color: transparent;
+    color: #e5eff6;
+    border: 1px solid #cae4ff;
+margin-left: 20%;
+width: 50%;
+margin-top: 5.3%;
+height: auto;
+
+ }
+ 
+  
+  .login:hover {
+    background-color: #007bff;
+    color: white;
+  }
+
+
+h1 {
+  color: #2c3504; 
+   font-size: 52px; 
+  padding: 10px; 
+  display: inline-block;
+
+}
+
+
+.welcome-title, .satoshi-title {
+  
+
+  margin-bottom: 0%;
+  width: 100%;
+
+
+}
+
+.welcome-title {
+  color: #ffffff;
+  justify-content: center; /* This will vertically center the items if you have enough height */
+ 
+  gap: 3%;
+margin-left: 0%;
+
+
+  letter-spacing: 1px;
+  margin-top: 25%;
+
+
+}
+
+.news-sectionh {
+  text-align: center;
+  display: flex;
+  margin-top: -46%;
+  transform: translate(1100%, 0%);
+  
+}
+
+.news-sectionh h2{
+
+  background-image: linear-gradient(to right, #9d9d9f 50%, blue 50%);
+  background-position: bottom;
+  background-size: 100% 1.5px;
+  background-repeat: no-repeat;
+}
+
+.green-text {
+  font-size: 56px;
+  display: flex;
+  color: rgb(217, 224, 233); 
+  margin-left: 14.3%;
+  width: 80%;
+  margin-top: -23.5%;
+  z-index: 10;
+  transform: translate(-0%, 30%);
+  font-family: 'Times New Roman', Times, serif; /* This line sets the font */
+}
+
+
+.green-text2 {
+  font-size: 30.5px;
+  display: flex;
+  color: rgb(217, 224, 233); 
+  margin-left: 29.5%;
+  width: 80%;
+  transform: translate(-0%, 150%);
+  z-index: 10;
+
+}
+
+.satoshi-title {
+  color: #333;
+  font-size: 10px;
+  margin-top: -2%;
+ 
+  width: 20%;
+ }
+
+ .welcome-title p {
+  color: #d3d3d3;
+  font-size: 18px;
+  margin-top: 5%;
+  margin-left: 30%;
+  width: 40%;
+}
+
+.follow-us-container {
+  justify-content: center;
+  text-align: center;
+  margin-top: 41%; /* Adjust as needed */
+
+  margin-left: -27.5%;
+}
+
+.follow-us-container h2 {
+  justify-content: center;
+  text-align: center;
+  margin-left: 23%;
+  font-size: 110%;
+  color: #ffffff; /* Adjust according to your theme */
+}
+
+.social-icons {
+  display: inline-flex;
+  justify-content: center;
+  margin-left: 23%;
+ 
+  height: auto;
+  gap: 12px; /* Space between icons */
+}
+.socialimage {
+  width: 55px; /* Adjust size as needed */
+  height: auto;
+}
+.socialimaget {
+  width: 42px; /* Adjust size as needed */
+  height: auto;
+}
+
+.socialimagei {
+  width: 55px; /* Adjust size as needed */
+  height: auto;
+  margin-top: -4%
+}
+
+.blur-background {
+  background-color: #363a0239;
+  width: 100%;
+  position: 'absolute';
+  z-index: 0;
+margin-left: -20%;
+
+}
+
+.team-section h2{
+  margin-left: 0%;
+  font-size: 40px;
+  transform: translate(-0%, 80%);
+  background-image: linear-gradient(to right, #04b7f3 50%, blue 50%);
+  background-position: bottom;
+  background-size: 5% 1.5px;
+  background-repeat: no-repeat;
+}
+
+.blur-background {
+
+  background-image: url('./images/bit.png'); /* Update path to your Bitcoin icon */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  opacity: 0.5; /* Adjust for desired visibility */
+}
+
+/* Update h2 and paragraph text color to white */
+.chart-container h2, .chart-container p {
+  color: white;
+}
+
+/* Add class to h2 for further customization */
+/* .chart-container h2 {
+  class: 'chart-heading';
+} */
+
+.left-content, .chart-container {
+  flex: 1; /* Both children will take up equal width */
+}
+.bitcoin-chart {
+ 
+  width: 100%;
+  height: 100%;
+  z-index: 122; /* Ensure the chart is above the blurred background */
+}
+/* Add padding or margin as necessary */
+.left-content {
+  /* Padding/margin for spacing */
+  padding-right: 20px; /* Adjust as needed */
+}
+
+.chart-container {
+  /* Padding/margin for spacing */
+  transform: translate(-20%, -30%) ;
+  margin-top: -90%;
+  width: 140%;
+  margin-left: -40%;
+  position: relative;
+
+}
+
+
+
+
+
+
+button {
+  background-color: #97e300; 
+  color: rgb(32, 43, 6);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px; 
+  font-size: 16px;
+  cursor: pointer;
+ margin-left: -40%;
+ margin-top: 1%;
+  transition: background-color 0.3s ease;
+  position: relative;  
+  overflow: hidden; 
+
+}
+
+
+
+button:hover {
+  background-color: #65b300; 
+}
+
+.enterbtn {
+   color: rgb(250, 250, 250); /* White text color */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Light white border */
+  padding: 20px 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: -2%;
+  cursor: pointer;
+  margin-left: 0%;
+  transform: translate(8%, -130%) ;
+  padding: 12px 25px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  background: linear-gradient(to right, rgba(64, 0, 255, 0.7), rgba(4, 0, 255, 0.34));
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  transition: transform 0.2s, background-color 0.2s;
+
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+
+  /* Hover effect for interaction */
+  &:hover {
+    background: rgba(0, 130, 177, 0.6); /* Slightly darker on hover */
+     }
+}
+
+
+
+
+@keyframes sweep {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 100%; 
+  }
+}
+
+.enterbtn:hover {
+  background-color: #0875fa4d; 
+}
+
+
+.left-section, .right-section {
+  flex: 1;
+}
+
+
+h2 {
+  font-size: 28px;
+margin-top: -22%;
+margin-left: -39%;
+
+}
+
+.call-to-action {
+  font-size: 18px; 
+margin-left: -40%;
+  margin-top: -0%;
+}
+
+.intro-text {
+  font-size: 20px; 
+margin-top: -0.5%;
+font-weight: bold;
+   
+}
+
+
+ .chainimage {
+  width: 34%; 
+  height: 25%;
+  margin-right: -55%;
+  margin-top: -0%;
+}
+
+.btclogo {
+
+  filter: brightness(90%);
+  transform: translate(24%, -11%) rotate(-18deg);
+ 
+  width: 11%;
+  height: 11%;
+}
+
+
+
+
+
+
+
+.contact-info {
+  position: absolute;
+ margin-bottom: 5%;
+  width: 100%;
+  
+}
+
+
+
+
+.socialmedia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+margin-left: -40%;
+margin-top: 1%;
+}
+
+
+.follow-us {
+  margin-bottom: 10px; 
+ 
+}
+
+.content54 {
+  display: flex; /* or display: grid; */
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the top */
+}
+
+.text {
+  flex: 1; /* Take remaining space */
+width: 57%;
+color: white;
+margin-top: 4%;
+}
+
+.text p{
+font-size: 110%;
+}
+
+.image45 {
+
+margin-left: 60%;
+
+margin-top: -12%;
+}
+.image776 {
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+
+  filter:  brightness(140%);
+}
+
+.text{
+  width: 100%;
+}
+
+
+.events-section{
+  margin-top: 10%;
+
+}
+
+.countdown-container {
+
+  align-items: center;
+}
+
+.countdown-label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.countdown {
+  font-size: 18px;
+  color: #02375b; /* Orange color */
+  font-weight: bold;
+  /* Add any other custom styles you want */
+}
+
+.events-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust as needed */
+  grid-gap: 20px; /* Adjust gap as needed */
+}
+
+
+.events-section h2{
+margin-bottom: -20%;
+  transform: translate(14%, 601%) ;
+  background-image: linear-gradient(to right, #04b7f3 50%, blue 50%);
+  background-position: bottom;
+  background-size: 10% 1.5px;
+  background-repeat: no-repeat;
+}
+
+.events-container {
+  display: flex; /* Display children in a row */
+  flex-wrap: wrap; /* Allow wrapping to multiple rows */
+  margin-top: 40%;
+  justify-content: space-between; /* Distribute space between items */
+
+
+}
+
+
+.events-container {
+  display: flex; /* Display children in a row */
+  flex-wrap: wrap; /* Allow wrapping to multiple rows */
+  justify-content: space-between; /* Distribute space between items */
+}
+
+.event-card {
+  width: calc(33.33% - 20px); /* Set width for each card with margin */
+  margin-bottom: 20px; /* Add some margin at the bottom */
+  /* You can adjust width and margins as needed */
+}
+
+
+.event-image{
+border-radius: 2%;
+  width: 60%;
+  height: auto;
+}
+.socialmedia .social-links {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+.socialmedia .social-links .social-icon {
+  width: 24px; 
+  height: auto;
+}
+
+.socialmedia .social-links .social-icon2 {
+  width: 38px; 
+  height: auto;
+}
+
+
+.countdown-overlay {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; 
+}
+
+.countdown-content {
+  background: rgba(108, 109, 104, 0.8); 
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px); 
+  text-align: center;
+}
+
+.comingsoon{
+  color: #ffe137; 
+  font-size: 2.3em;
+  margin-bottom: 20px;
+}
+
+.countdown-timer {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.3); 
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+  color: #f8ffdb;
+  backdrop-filter: blur(3px);
+}
+
+.countdown-timer span {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.countdown-overlay button {
+  
+  margin-left: 100px;
+  padding: 10px 20px;
+  border: none;
+  transform: translate(254%, -551%) ;
+ 
+  background: #e63200fd; 
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.blue-button {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 2px solid blue; /* Blue border */
+  border-radius: 4px; /* Rounded corners */
+  color: blue; /* Blue text color */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.blue-button:hover {
+  background-color: blue; /* Change background color on hover */
+  color: white; /* Change text color on hover */
+}
+
+.loading-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #00f2fe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(2, 1, 15); 
+
+  z-index: 1100;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(to right, #290080, #0896abfa); /* Adjust the colors to match the gradient in your image */
+  padding: 40px;
+  color: white;
+
+}
+.FeatureSection {
+  height: 40%;
+  background: radial-gradient(circle, rgb(69, 68, 101) 10%, rgb(1, 38, 48) 90%);
+width: 100%;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 2em; /* Adjust size as needed */
+  font-weight: bold;
+}
+
+.stat-label {
+  font-size: 1em; /* Adjust size as needed */
+}
+
+.container33 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.container33 h2 {
+  margin-left: 0;
+}
+.partnership-section{
+
+  margin-top: 32%;
+}
+
+
+
+.spartnership-section{
+  background-color: #00101d;
+    margin-top: 0%;
+    margin-top: 32%;
+
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    padding: 15%;
+    color: white;
+  }
+
+  .h2anomation{
+    align-items: center;
+    background-image: linear-gradient(to right, #04b7f3 50%, blue 50%);
+    background-position: bottom;
+    background-size: 5% 1.5px;
+    background-repeat: no-repeat;
+    margin-left: -1%;
+    font-weight: bold;
+    margin-top: -18%;
+    }
+
+
+  
+.section5{
+  background: white;
+
+  margin-top: 26%;
+}
+
+
+.section5 h2{
+  font-size: 30px;
+  margin-left: 0;
+  margin-top: -23%;
+  background-image: linear-gradient(to right, #04b7f3 50%, blue 50%);
+  background-position: bottom;
+  background-size: 18% 1.5px;
+  background-repeat: no-repeat;
+}
+
+.serimage{
+  width: 14%;
+  height: auto;
+  transform: translate(0%, 25%); /* Move left by 100px and up by 50px */
+}
+
+.news-section{
+  margin-top: -100%;
+  display: flex;
+
+  background: white;
+
+}
+
+.section6{
+  background: radial-gradient(circle, rgb(69, 68, 101) 10%, rgb(1, 38, 48) 90%);
+
+  margin-top: 25%;
+}
+
+.henosis-investment-group {
+  background-color: #00101d;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center; /* Center content horizontally */
+    
+  }
+
+.henosis-investment-group h1 {
+  color: #eff2ff;
+  font-size: 30px;
+  margin-left: 0;
+  margin-top: 1%;
+  background-image: linear-gradient(to right, #eff2ff 50%, blue 50%);
+  background-position: bottom;
+  background-size: 100% 1.5px;
+  background-repeat: no-repeat;
+}
+
+
+.content {
+  max-width: 600px; /* Adjust the width as needed */
+  text-align: center; /* Center align text */
+}
+
+.section7{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./images/download.jpeg'); /* Replace with the path to your background image */
+  background-size: cover;
+  color: white;
+  padding: 15%; /* Adjust padding as needed */
+  margin-top: 0%;
+}
+
+.section8{
+  background: radial-gradient(circle, rgb(255, 255, 255) 10%, rgb(248, 251, 252) 90%);
+
+  margin-top: 20%; 
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%; /* Adjust as needed to control the spacing between columns */
+  margin-bottom: 20px; /* Space between rows */
+  margin-bottom: 20px; /* Adjust based on your spacing preference */
+
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 50%; /* Adjust this value to control the width of the columns */
+}
+
+img {
+  width: 150px; /* or any size you prefer */
+  height: auto;
+  margin-bottom: 10px; /* Adjust space between image and text */
+}
+
+/* Previous styles */
+
+.advisor-button {
+  padding: 12px 20px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #135d9d 0%, #0d00feaf 100%);
+  display: block;
+  margin: 20px auto; /* Center the button */
+  transition: background-color 0.3s ease;
+}
+
+.advisor-button:hover {
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 80%);
+}
+
+.crypto-section-container188 {
+  position: relative;
+  width: calc(49% - 19px); /* Adjusted width to accommodate padding */
+  background-color: #dde6e9be;
+  padding: 40px;
+  margin-bottom: 20px;
+
+  border-radius: 15px; /* Adjusted border radius */
+  box-sizing: border-box; /* Ensures padding is included in width calculation */
+  box-shadow: 0 4px 8px rgba(22, 13, 121, 0.51); /* Added box shadow */
+}
+
+.crypto-section-container188 P{
+font-size: 110%;
+
+}
+
+.iconimage22 {
+  width: 15%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; /* Ensures the image is treated as a block element */
+}
+
+.advisor-button2 {
+  padding: 12px 20px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  transform: translate(0%, 60%); /* Move left by 100px and up by 50px */
+
+  border-radius: 5px;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #135d9d 0%, #0d00feaf 100%);
+  display: block;
+  margin: 20px auto; /* Center the button */
+  transition: background-color 0.3s ease;
+}
+
+.advisor-button2:hover {
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 80%);
+}
+
+
+.amber-labs-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./images/download.jpeg'); /* Replace with the path to your background image */
+  background-size: cover;
+  color: white;
+  padding: 50px; /* Adjust padding as needed */
+}
+
+.content-container {
+  max-width: 1200px; /* Adjust max-width as needed */
+  text-align: left;
+}
+
+.subtitle {
+  color: #00d1b2; /* This is a teal color, adjust the hex code to match the design */
+  font-size: 1.5rem; /* Adjust font-size as needed */
+}
+
+.title {
+  color: #ffffff;
+  font-size: 3rem; /* Adjust font-size as needed */
+  margin: 20px 0; /* Adjust margin as needed */
+}
+
+.description {
+  font-size: 1.25rem; /* Adjust font-size as needed */
+  opacity: 0.7; /* Adjust opacity as needed */
+  margin-bottom: 30px; /* Adjust margin as needed */
+}
+
+.read-more-btn {
+ /* This is a teal color, adjust the hex code to match the design */
+  color: rgb(6, 15, 45);
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px; /* Adjust border-radius as needed */
+  transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #00b29b; /* Darker shade for hover effect */
+}
+
+
+.team-section {
+  background-color: #f1f3f99f;
+  color: rgb(26, 23, 23); /* White text */
+  padding: 50px; /* Padding around the section */
+  text-align: center; /* Center align text */
+  height: auto;
+  margin-top: 12%;
+  transform: translate(0%, 0%);
+
+}
+
+.team-members {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center team members horizontally */
+  gap: 20px; /* Space between team members */
+  margin-top: 18%;
+
+}
+
+.team-member {
+  box-shadow: 0 4px 8px rgba(7, 44, 192, 0.721); /* Add box-shadow */
+
+  background-color: rgba(0, 0, 3, 0.888); /* White background for team member cards */
+  border-radius: 20px; /* Rounded corners for cards */
+  color: #f1f0f0; /* Dark text for readability */
+  padding: 18px; /* Padding inside cards */
+height: auto;
+  width: 230px; /* Fixed width for each card */
+  margin-top: 0%;
+  transform: translate(0%, -5%); /* Move left by 100px and up by 50px */
+
+}
+
+.team-member img {
+
+
+}
+
+
+.teambtn{
+
+  color: #60d459;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.team-member h3 {
+  margin: 5px 0; /* Margin around name */
+}
+
+.team-member h2 {
+margin-top: 50px;
+}
+
+.teamimg{
+  margin-top: -62%;
+}
+
+.team-member p {
+  margin: 0; /* No margin around title/role */
+}
+
+
+.news-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* This will center the children along the cross axis */
+  gap: 20px;
+  padding: 20px;
+height: 106vh;
+
+  margin-top: 0%;
+  color: rgb(6, 3, 74);
+}
+
+.featured-article {
+  width: 100%; /* Use 100% width for small screens */
+  max-width: 800px; /* You can adjust this value to suit your design */
+
+  margin-left: 2%;
+
+margin-top: -3%;
+}
+
+.newsfeacontainer {
+  display: flex;
+}
+
+.featured-article img {
+  width: 100%;
+  height: auto;
+  margin-top: 10%;
+  margin-left: -8%;
+}
+.h2news{
+  color: #059edf;
+  margin-left: -12%;
+ font-size: 30px;
+  margin-bottom: 40%;
+  display: flex;
+  transform: translate(380%, 50%); /* Move left by 100px and up by 50px */
+
+}
+.featured-article h2{
+  margin-left: -6.45%;
+  margin-top: -4%;
+  transform: translate(-1%, 76%); /* Move left by 100px and up by 50px */
+
+}
+
+.featured-article p{
+  margin-left: -10%;
+
+ /* Move left by 100px and up by 50px */
+
+}
+.small-articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%; /* Ensure the grid takes the full width */
+}
+
+.small-article {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.small-article img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+/* Adjustments for responsive design */
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+  
+  
+  .header {
+    background-image: url('./images/abti.jpg'); /* Adjust the path as needed */
+ 
+
+    height: 100%;
+  }
+  .spartnership-section{
+    background-color: #00101d;
+      margin-top: -20%;
+height: 40vh;
+
+      color: white;
+    }
+  
+    .h2anomation{
+      align-items: center;
+      background-image: linear-gradient(to right, #04b7f3 50%, blue 50%);
+      background-position: bottom;
+      background-size: 5% 1.5px;
+      background-repeat: no-repeat;
+      font-weight: bold;
+      font-size: 140%;
+      margin-left: 4%;
+      margin-top: 50%;
+      }
+  
+  
+  
+      .animated-words {
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        height: 100%; 
+        margin-left: 1%;
+        width: 100%;
+        margin-top: 19%;
+      cursor: pointer;
+      
+      }
+
+
+
+
+  .word-icon {
+    width: 18%; /* Adjust the size as needed */
+    height: auto; /* Adjust the size as needed */
+  
+}
+  .word h2 {
+    font-size: 110%; /* Adjust heading size on smaller screens */
+  }
+
+
+  .paragraph-container {
+    position: absolute; /* Position the paragraph container relative to its parent */
+    top: 100%; /* Align the top of the paragraph container to the bottom of the word */
+    left: 0; /* Align the left side of the paragraph container to the left side of the word */
+    width: 100%; /* Make the paragraph container full width of the word */
+  }
+  
+
+  .word p {
+    width: 10%;
+    font-size: 80%; /* Adjust font size as needed */
+    line-height: 1.5; /* Adjust line height as needed */
+    margin: 0; /* Remove default margin */
+    padding: 10px; /* Add padding to create space between the paragraph and the word */
+    background-color: rgba(255, 255, 255, 0); /* Add background color to make the text readable */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+  }
+
+
+
+
+.welcome-title, .satoshi-title {
+  
+
+
+
+
+
+}
+
+
+
+.green-text {
+  font-size: 70%;
+  display: flex;
+  color: rgb(217, 224, 233); 
+  margin-left: 3%;
+  width: 90%;
+  margin-top: -23.5%;
+  z-index: 10;
+  transform: translate(-0%, 20%);
+  font-family: 'Times New Roman', Times, serif; /* This line sets the font */
+}
+
+
+.green-text2 {
+  font-size: 30%;
+  display: flex;
+  color: rgb(217, 224, 233); 
+  margin-left: 7%;
+  width: 80%;
+margin-top: 0%; 
+ z-index: 10;
+
+}
+
+.welcome-title p {
+  
+
+
+  color: #d3d3d3;
+  font-size: 22%;
+  margin-top: 25%;
+  margin-left: 19%;
+  width: 60%;
+
+
+}
+
+.enterbtn {
+  color: rgb(250, 250, 250); /* White text color */
+ border: 1px solid rgba(255, 255, 255, 0.2); /* Light white border */
+ padding: 20px 30px;
+ border-radius: 5px;
+ font-size: 60%;
+ cursor: pointer;
+ margin-left: 5%;
+ margin-top: 10%;
+ transform: translate(0%, -80%) ;
+ padding: 12px 25px;
+ border: 2px solid rgba(255, 255, 255, 0.4);
+ border-radius: 10px;
+ background: linear-gradient(to right, rgba(64, 0, 255, 0.7), rgba(4, 0, 255, 0.34));
+ color: #ffffff;
+font-weight: bold;
+ cursor: pointer;
+ outline: none;
+ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ backdrop-filter: blur(10px);
+ -webkit-backdrop-filter: blur(10px); /* For Safari */
+ transition: transform 0.2s, background-color 0.2s;
+
+ position: relative;
+ overflow: hidden;
+ backdrop-filter: blur(10px); /* Blur effect */
+ -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
+ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+
+ /* Hover effect for interaction */
+ &:hover {
+   background: rgba(0, 130, 177, 0.6); /* Slightly darker on hover */
+    }
+}
+
+
+
+
+.image55container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  transform: translate(1%, -0%) ;
+  margin-bottom: 3%;
+}
+  
+  
+  .image55wrapper {
+    position: relative;
+    margin-right: -0%; /* Adjust spacing between images */
+    cursor: pointer;
+  }
+  
+  .zoom55image {
+    width: 80%; /* Adjust image size */
+    transition: transform 0.3s ease-in-out;
+    height: 90%;
+    opacity: 0.85;
+    border-radius: 10%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgb(7, 158, 192); /* Add box-shadow */
+  }
+  
+  
+.image55overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.667); /* Dark black color overlay */
+border-radius: 10%;
+  transform: translate(-50%, -50%);
+cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1; 
+  font-size: 80%;
+  font-weight: bold;
+}
+
+.follow-us-container {
+  justify-content: center;
+  text-align: center;
+  margin-left: -25.5%;
+  
+  transform: translate(0%, 130%);
+}
+
+.follow-us-container h2 {
+  justify-content: center;
+  text-align: center;
+  margin-left: 23%;
+  font-size: 90%;
+  color: #ffffff; /* Adjust according to your theme */
+}
+
+.social-icons {
+  display: inline-flex;
+  justify-content: center;
+
+ 
+  height: auto;
+}
+.socialimage {
+  width: 15%; /* Adjust size as needed */
+  height: auto;
+  transform: translate(180%, -0%);
+}
+.socialimaget {
+  width: 30%; /* Adjust size as needed */
+  height: auto;
+  transform: translate(-438%, -0%);
+
+}
+
+.socialimagei {
+  width: 45%; /* Adjust size as needed */
+  height: auto;
+  transform: translate(-158%, -0%);
+
+}
+  .news-section {
+    flex-direction: row; /* Switch to row direction for larger screens */
+    justify-content: space-around; /* This will distribute space around the items */
+  }
+
+  .featured-article, .small-articles {
+    flex-basis: calc(50% - 10px); /* Assign width to both containers */
+  }
+
+  .featured-article {
+    max-width: calc(50% - 10px); /* Limit max width to half of the container */
+  }
+
+  .small-article {
+    flex-basis: calc(25% - 10px); /* Adjust the basis for smaller articles */
+  }
+  .row {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+  }
+  .section5 {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  .crypto-section-container188 {
+    width: 90%; /* Make each container full width */
+    margin-left: 6%;
+  }
+
+  .henosis-investment-group {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+  }
+  
+  .content {
+    max-width: 100%; /* Adjust the width as needed */
+    text-align: center; /* Center align text */
+  }
+  
+  .image776 {
+    width: 100%; /* Optionally adjust width */
+  }
+
+  .serimage{
+    width: 20%;
+    height: auto;
+    transform: translate(0%, 25%); /* Move left by 100px and up by 50px */
+  }
+
+  .henosis-investment-group h1 {
+    color: #eff2ff;
+    font-size: 20px;
+    margin-top: 5%;
+  
+  }
+  
+}
+
+
+@media screen and (min-width: 600px) {
+
+
+  
+}

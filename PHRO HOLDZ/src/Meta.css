@@ -1,0 +1,79 @@
+
+
+/* Container styles */
+.metaverse-container {
+  max-width: 800px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px;
+}
+
+/* Row container styles */
+.metaverse-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Section container styles */
+.metaverse-section-container {
+  position: relative;
+  width: calc(49% - 19px); /* Adjusted width to accommodate padding */
+  background-color: #00101d;
+  padding: 40px;
+  margin-bottom: 20px;
+
+  border-radius: 15px; /* Adjusted border radius */
+  box-sizing: border-box; /* Ensures padding is included in width calculation */
+  box-shadow: 0 4px 8px rgba(22, 13, 121, 0.51); /* Added box shadow */
+}
+
+
+.imgcontainer{
+
+ 
+  width: 100%; /* Adjusted width to accommodate padding */
+  background-color: #e7e7e74b;
+
+  margin-bottom: 20px;
+
+  border-radius: 15px; /* Adjusted border radius */
+  box-sizing: border-box; /* Ensures padding is included in width calculation */
+  box-shadow: 0 4px 8px rgba(173, 167, 240, 0.51); /* Added box shadow */
+
+}
+
+
+.iconimage45{
+width: 10%;
+  margin-left: 10%;
+}
+.metaverse-title {
+
+  font-size: 2.1rem; /* Example size, adjust as needed */
+  color: #282303; /* Gold color, adjust as needed */
+  align-items: center;
+  margin-left: 10%;
+  margin-top: 0%;
+}
+/* Subtitle styles */
+.metaverse-subtitle {
+  font-size: 1.8rem; /* Example size, adjust as needed */
+  color: #FFD700; /* Gold color, adjust as needed */
+  align-items: center;
+  margin-left: 0%;
+  margin-top: 2%;
+}
+
+/* Text styles */
+.metaverse-text {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #f7f7f7; /* Adjust the color as needed */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .metaverse-section-container {
+    flex-basis: 100%; /* Each section takes full width on smaller devices */
+  }
+}

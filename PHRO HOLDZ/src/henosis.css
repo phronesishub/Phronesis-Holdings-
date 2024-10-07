@@ -1,0 +1,244 @@
+
+
+  .henosis-investment-group {
+    /* Add any additional styles for the section if needed */
+  }
+  
+  .content56 {
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+  }
+  
+  .text56{
+    flex: 1; /* Take remaining space */
+  }
+  
+
+  .glass48button {
+    padding: 10px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    background: linear-gradient(to right, rgba(0, 174, 255, 0.7), rgba(0, 98, 255, 0.7));
+    color: #ffffff;
+    font-size: 1rem;
+    margin-left: 0%;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    transition: transform 0.2s, background-color 0.2s;
+  }
+  
+  .glass48button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.8), rgba(0, 0, 255, 0.8));
+  }
+  
+  
+  .content45container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; /* Optional background color */
+    padding: 20px;
+    height: 70vh; /* Adjust this as needed */
+    border-radius: 10px;
+  }
+  
+  .coming-soon5container {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .hnoim {
+    width: 400px; /* Adjust the image size */
+    height: auto; /* Adjust the image size */
+ margin-left: 18%;
+  }
+  
+  /* Add a blue line below each henos-subtitle */
+.henos-subtitle {
+  border-bottom: 2px solid blue;
+  padding-bottom: 10px; /* Adjust as needed */
+  width: 50px;
+}
+
+.content45container14 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2.5%;
+  height:100%;
+}
+
+.Asset-phronesis-title21 {
+  font-size: 2.1rem; /* Example size, adjust as needed */
+  color: #FFD700; /* Gold color, adjust as needed */
+  align-items: center;
+  margin-left: 0%;
+  margin-top: 2%;
+}
+
+
+.crypto-section-container14 {
+  position: relative;
+  width: calc(49% - 19px); /* Adjusted width to accommodate padding */
+  background-color: #00101d;
+  padding: 40px;
+  margin-bottom: 20px;
+
+  border-radius: 15px; /* Adjusted border radius */
+  box-sizing: border-box; /* Ensures padding is included in width calculation */
+  box-shadow: 0 4px 8px rgba(22, 13, 121, 0.51); /* Added box shadow */
+}
+
+
+.learn-more-button12 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 7px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-left: 0;
+  transition: background-color 0.3s ease;
+  outline: none;
+
+
+
+}
+
+.content45container14 h3 {
+
+  transform: translateY(-60%);
+margin-left: 20%;
+margin-top: 4%;
+  width: 60%;
+  font-size: 20px;
+  text-align: center;
+}
+
+.glass-button45 {
+  padding: 10px 20px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  background: linear-gradient(to right, rgba(0, 174, 255, 0.7), rgba(0, 98, 255, 0.7));
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.glass-button45:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, rgba(255, 251, 0, 0.8), rgba(0, 225, 255, 0.8));
+}
+
+
+.learn-more-button12:hover {
+    background-color: white;
+    color: black;
+}
+
+  .text23 {
+    color: black;
+    font-size: 24px; /* Adjust the text size */
+    margin-top: 68%;
+    width: 100%;
+    font-weight: bold;
+    margin-left: -80%;
+  }
+  
+  /* General styles */
+
+
+
+.center2container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.content45container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.henos-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.henos-section-container {
+  width: 55%;
+margin-top: 20%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Vertical menu/navigation bar styles */
+
+.vertical-menu {
+  width: 200px;
+}
+
+.vertical-menu a {
+  background-color: #f8f9fa;
+  color: #333;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #e9ecef;
+}
+
+/* Styles for location container */
+
+.location-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.location-container h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Styles for contact container */
+
+.contact-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contact-container h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Map style (you can replace this with your own map styles) */
+
+.map-container {
+  width: 100%;
+  height: 300px;
+  background-color: #f0f0f0;
+  margin-top: 20px;
+}
+
+/* Footer styles (assuming you have a separate Footer component) */
+

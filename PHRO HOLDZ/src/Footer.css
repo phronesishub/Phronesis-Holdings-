@@ -1,0 +1,158 @@
+/* Footer.css */
+
+.footerglass {
+  align-items: center;
+margin-top: -7%;
+background-color: #020a12;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footerglass p{
+  color: #ecf7f5;
+}
+
+.footer-content {
+  display: flex;
+  margin-top: 7%;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-footer{
+  width: 2.5%;
+  height: auto;
+}
+
+.contact-info h3 {
+  cursor: pointer; /* Change cursor to pointer for better UX */
+  margin-bottom: 10px;
+}
+
+.email-info {
+  margin-top: 5px;
+}
+
+.email-info a {
+  color: rgb(255, 243, 253);
+}
+
+.footer-bottom {
+  text-align: center;
+  color: #888; /* Set the color of the bottom text */
+}
+
+/* New Styles */
+
+.product-section,
+.services-section {
+  flex-basis: 50%;
+
+  text-align: center;
+}
+
+.product-section h3,
+.services-section h3 {
+  margin-top: 20px;
+}
+
+.product-section ul,
+.services-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.product-section ul li,
+.services-section ul li {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+margin-top: -3.9%;
+}
+
+.footer-logo p {
+  margin: 0;
+  font-weight: bold;
+  color: #ecf7f5;
+  margin-left: 0.5%;
+}
+
+.follow-us-container1 {
+  justify-content: center;
+  text-align: center;
+  margin-top: 0%; /* Adjust as needed */
+
+  margin-left: -35.5%;
+}
+
+
+.social-icons1 {
+  display: inline-flex;
+  justify-content: center;
+  margin-left: 23%;
+ 
+  height: auto;
+  gap: 12px; /* Space between icons */
+}
+.socialimage1 {
+  width: 55px; /* Adjust size as needed */
+  height: auto;
+}
+.socialimaget1 {
+  width: 42px; /* Adjust size as needed */
+  height: auto;
+}
+
+.socialimagei1 {
+  width: 55px; /* Adjust size as needed */
+  height: auto;
+  margin-top: -4%
+}
+
+@media (max-width: 768px) {
+  .product-section h3,
+  .services-section h3 {
+font-size: 80%;  }
+
+.footer-logo p {
+  margin: 0;
+  font-weight: bold;
+  color: #ecf7f5;
+  margin-left: 0.5%;
+  font-size: 10%;
+}
+
+.product-section p{
+  font-size: 60%;
+}
+.product-section ul li,
+.services-section ul li {
+ font-size: 60%;
+
+}
+
+.socialimage1 {
+  width: 50%; /* Adjust size as needed */
+  height: auto;
+}
+.socialimaget1 {
+  width: 100%; /* Adjust size as needed */
+  height: auto;
+}
+
+.socialimagei1 {
+  width: 140%; /* Adjust size as needed */
+  height: auto;
+  margin-left: -37%;
+  margin-top: -4%
+}
+
+}
+

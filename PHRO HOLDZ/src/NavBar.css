@@ -1,0 +1,327 @@
+NavBar.css
+
+.navigation {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; /* Adjust padding as needed */
+  color: white; 
+  background-color: #020213;
+}
+
+
+.navigation::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #020213;
+
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(50px); /* Apply blur effect */
+  -webkit-backdrop-filter: blur(20px); /* For Safari */
+  z-index: -1; /* Ensure the pseudo-element is behind the content */
+}
+
+/* Adjust other styles for your navigation items as needed */
+
+
+  .nav-container {
+    display: flex;
+    /* background-color: #020213; */
+
+    color: white; 
+
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+
+
+  .logo-section-large {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    left: -1%; 
+    display: flex; 
+   }
+  
+  .logol {
+   /* Adjust the size of your logo if necessary */
+   width: 12%; /* or your desired width */
+   height: 1%; /* or your desired height */
+   margin-right: 3%; /* Adds space between logo and text */
+   margin-top: 0%;
+  }
+  
+  .company-name {
+    font-size: 100%;
+ margin-bottom: 50%;
+ font-size: 18px; /* Adjust font size as needed */
+ /* font-weight: bold; */
+    font-weight: bold;
+    font-family: "Segoe UI",  sans-serif; /* Segoe UI font family */
+    color: #c1cfcc;
+ transform: translate(0%, -10%);
+    margin-left: -0%;
+    font-family: 'Ubuntu', sans-serif; /* Apply the Ubuntu font */
+  }
+  
+  
+  .nav-list {
+ 
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+  
+    transform: translate(-4%, -8%);
+    flex-grow: 1;
+
+    z-index: 10;
+   
+  }
+  
+  .nav-item {
+    margin-right: 22px; 
+    margin-top: 3%;
+  transform: translate(-10%, -9%);
+    font-size: 13.8px; 
+      padding: 10px 15px; /* Adjust as necessary */
+  cursor: pointer;
+  position: relative;
+  background-color: #021f0867;
+    border: 0.5px solid #d4e7e4;
+    font-family: 'Inter', sans-serif; /* This line sets the font to Inter */
+  
+    font-weight: 0;
+    color: #e9e6e6; 
+    border-radius: 5px; /* Optional: for rounded corners */
+  
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+  }
+  
+  .fa-caret-down {
+    margin-left: 5px; /* Adjust margin as needed */
+    color: #0f5596; /* Adjust color as needed */
+  }
+  
+  
+  .nav-item:hover {
+    color: #007bff; /* Highlight color on hover */
+  }
+  
+  .dropdown-content {
+    display: none; /* Initially hidden */
+    position: absolute;
+    border: 0.2px solid rgb(1, 107, 109); /* Blue border */
+
+    background-color: #00101d;
+    min-width: 210px;
+    border-radius: 5px; /* Optional: for rounded corners */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 5;
+    top: 100%;
+    width: 100%;
+    left: 0;
+   
+    margin: 3px 0; /* Adjust margin as needed */
+  
+  }
+  
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 15px 16px;
+    text-decoration: none;
+    display: block;
+    border: none;
+    border-top: 1px solid rgba(202, 202, 202, 0.658); /* Set the border style to solid and color to white */
+    margin: 5px 0; /* Adjust margin as needed */
+  
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #0e526d;
+  }
+  
+  .nav-item:hover .dropdown-content {
+    display: block; /* Show dropdown content on hover */
+  }
+  
+  
+
+  .nav-buttons {
+    position: absolute;
+    right: 10px; /* Adjust as necessary */
+  
+    transform: translate(0%, 0%);
+    margin-right: -0%;
+    gap: 0%;
+    width: 30%;
+
+
+  }
+
+  .logo-section3{
+  display: block;
+  }
+
+
+  
+  .contact-us {
+    padding: 10px 20px;
+    background-color: #007bff; /* Adjust the button background color as needed */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Optional: for rounded corners */
+    margin-left: 250px;
+  }
+  
+  .contact-us:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+  }
+
+
+  /* Adjustments for responsive design */
+@media (min-width: 768px) {
+  .logo-section3{
+    display: flex;
+  }
+  
+  .logo-section{
+    display: block;
+  }
+  .nav-list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+ margin-left: 12%;
+
+    flex-grow: 1;
+
+    z-index: 10;
+   
+  }
+
+ 
+  
+
+
+
+}
+
+
+  /* Adjustments for responsive design */
+  @media (min-width: 600px) {
+
+    .nav-list {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+   margin-left: 12%;
+  
+      flex-grow: 1;
+  
+      z-index: 10;
+     
+    }
+  
+
+
+  
+  
+  }
+
+
+  
+  @media only screen and (min-width: 768px) {
+    .logo-section-large {
+      display: block;
+    }
+  }
+  
+  .logo-section-small {
+    display: block;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .logo-section-small {
+      display: none;
+    }
+  }
+  
+
+  /* Adjust these styles as needed */
+
+/* Common styles for both logo sections */
+.logo-section {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo-section img {
+  height: 40px; /* Adjust height as needed */
+  margin-right: 10px; /* Adjust margin as needed */
+}
+
+/* Styles for large logo section */
+.logo-section-large {
+  /* Add specific styles for large logo section */
+}
+
+/* Styles for small logo section */
+.logo-section-small {
+  display: none; /* Initially hide small logo section */
+}
+
+
+@media (max-width: 768px) {
+  /* Adjust breakpoint as needed */
+  .logo-section-large {
+    display: none; /* Hide large logo section on small screens */
+  }
+
+  .nav-buttons{
+    display: none; /* Hide large logo section on small screens */
+
+  }
+
+  .logo-section-small {
+    display: flex; /* Show small logo section on small screens */
+    align-items: center; /* Align items vertically */
+    height: 60px;
+  }
+
+
+
+  .logos{
+width: 20%;
+height: auto;
+
+  }
+
+
+  .company-names {
+    font-size: 80%; /* Adjust font size as needed */
+    font-weight: bold;
+    margin-right: -10%; /* Add margin between company name and logos */
+    white-space: nowrap; /* Prevent wrapping */
+
+
+
+  }
+
+
+}

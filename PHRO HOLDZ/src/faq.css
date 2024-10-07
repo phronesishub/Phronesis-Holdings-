@@ -1,0 +1,23 @@
+.faq-item {
+    margin-bottom: 10px;
+    margin-left: 10%;
+  }
+  
+  .faq-question {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    font-size: 16px;
+    
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .faq-answer {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666;
+  }
+  

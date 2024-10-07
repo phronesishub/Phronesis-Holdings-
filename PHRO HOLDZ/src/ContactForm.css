@@ -1,0 +1,95 @@
+/* ContactForm.css */
+.contact-form-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  
+}
+
+.contact-form-container {
+  background: white;
+
+  border-radius: 5px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px; /* Adjust max-width as needed */
+  overflow-y: auto; /* Enables vertical scrolling */
+  max-height: 100vh; /* Sets a maximum height relative to the viewport height */
+}
+
+
+.contact-form-container h2 {
+margin-top: 10%;
+margin-left: 0%;
+}
+
+
+.close-button {
+margin-left: 90%;
+  border: black;
+  background: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="checkbox"] {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #030b1f;
+  border-radius: 4px;
+}
+
+.checkbox-group {
+  display: flex; /* Use flexbox */
+  align-items: center; /* Align items vertically in the center */
+  gap: 10px; /* Add space between checkboxes */
+  height: 10vh;
+}
+
+/* Optional: If you prefer using grid layout */
+.checkbox-group {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(120px, 2fr)); /* Adjust as needed */
+  gap: 10px; /* Add space between checkboxes */
+}
+
+.submit-button {
+  background-color: #0044cc;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%; /* Adjust width as necessary */
+  display: block; /* Ensures the button is block level */
+  margin: 0 auto; /* Centers the button */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .contact-form-container {
+    max-width: 90%; /* Makes the form container wider on small screens */
+  }
+}

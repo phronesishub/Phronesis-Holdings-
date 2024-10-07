@@ -1,0 +1,47 @@
+/* Cryptoa.css */
+
+/* Container styles */
+.crypto-container {
+  max-width: 90%; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px;
+}
+
+/* Row container styles */
+.crypto-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Section container styles */
+.crypto-section-container {
+  flex-basis: calc(50% - 40px); /* Adjust to desired width (half of the row width minus margins) */
+
+  border: rgb(37, 37, 3) ;
+ margin-top: 10%;
+}
+
+/* Subtitle styles */
+.crypto-subtitle {
+  font-size: 24px;
+  font-weight: bold;
+margin-left: 0;
+width: 100%;
+  margin-bottom: 20px;
+  color: #007bff; /* Adjust the color as needed */
+}
+
+/* Text styles */
+.crypto-text {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #666; /* Adjust the color as needed */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .crypto-section-container {
+    flex-basis: 100%; /* Each section takes full width on smaller devices */
+  }
+}
